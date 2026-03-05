@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+:root{
+   /* create new styling variable like colors */
+    --font-size: 16px;
+    --font-weight-medium:500;
+    --font-weight-normal:400;
+    --background-color:#ffffff;
+    --blue-gradient: linear-gradient(to right,oklch(28.2% 0.091 267.935),oklch(70.7% 0.165 254.624))
+    
+}
+
+@theme inline{
+    --color-background:var(--background)
+}
+
+@layer base{
+
+
+    body{
+        @apply bg-gray-100 text-black;
+    }
+html {
+    font-size: var(--font-size);
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h4 {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  button {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  input {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+}
+  @keyframes typing{
+    
+    /* from {width:0}
+    to {width:15.8ch} */
+    0%{width:0ch} 
+    5%{width: 22.5ch}
+    85%{width: 22.5ch}
+    90%{width:0}
+    95%{width:0}
+
+    100%{width:22.5ch}
+  }
+
+  .typing-animation{
+ display: inline-block;   /* VERY IMPORTANT */
+  overflow: hidden;
+  white-space: nowrap;
+  
+    animation: typing  37s 0.8s steps(25) both  ,
+    blink 0.5s  step-end infinite  ;
+
+  }
+
+
+  @keyframes blink{
+    50%{border-color:transparent}
+  }
+  
+  @keyframes enlarge{
+   
+   0%,100% { 
+    transform: scale(1)
+  }
+    50%{
+      transform:scale(1.02);
+      ;
+    }
+  }
+  .enlarge-animation{
+    animation:enlarge 0.5s ease-in-out  ;
+    animation-delay: var(--delay,0s)
+    
+  }
+
+  
+  @utility text-blue-gradient{
+   background:var(--blue-gradient);
+   background-clip:text;
+   -webkit-background-clip:text;
+   color:transparent;
+
+  }
+  
