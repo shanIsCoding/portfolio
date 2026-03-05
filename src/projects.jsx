@@ -25,7 +25,7 @@ export function Projects(){
     return(
         <motion.section id="projects" 
         className=" mt-30 scroll-mt-32"
-        initial={{opacity:0,y:-50}}
+        initial={{opacity:0,y:50}}
         ref={ref}
         animate={
           isInView ? { opacity:1, y:0}
