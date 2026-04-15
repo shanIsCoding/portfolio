@@ -10,10 +10,10 @@ const ref= useRef(null);
 const isInView=useInView(ref,{once:true,amount:0.3})
     const skills=[
         
-        {title:"Programming Languages", points:["JavaScript","TypeScript","C++"] },
-        {title:"Web development", points:["React","Tailwind Css","Html","Css"]},
-        {title:"Mobile Development",points:["React native(Expo)"]},
-        {title:"Databases & Backend",points:["Firebase","SQL"]}
+        {title:"Programming Languages", points:["JavaScript","TypeScript","SQL","C++","Java"] },
+        {title:"Frontend & Mobile", points:["React","React-Native","Tailwind Css","Html","Css"]},
+        {title:"Backend",points:["Node.js","Express.js","Authentication(JWT,bcrypt)","middleware"]},
+        {title:"Databases",points:["PostgreSQL","Prisma ORM","Firebase"]}
 
 
 

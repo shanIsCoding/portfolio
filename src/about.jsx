@@ -49,7 +49,7 @@ export function About(){
       
          <div className=" flex flex-col px-2 py-4 ">
             
-            <p className="text-gray-600 text-lg text-justify leading-relaxed ">I am a fresh Computer Science graduate with a particular interest in software development and mobile app building,with a keen focus on functionality and design. </p>
+            <p className="text-gray-600 text-lg text-justify leading-relaxed ">I am a fresh Computer Science graduate with hands-on experience developing full-stack applications. Passionate about building softwares, with a keen focus on functionality and design. </p>
            <p className="text-gray-600 text-lg text-justify  leading-relaxed mt-4">While interning at Sd Worx, I became familiar with the agile way of working, while collaborating with teammates and colleagues to deliver quality works </p> 
          <p className="text-gray-600 text-lg text-justify  leading-relaxed mt-4">I am excited about the opportunity to bring my skills, enthusiasm, and
 commitment to learning to the company. I look forward to being part of a

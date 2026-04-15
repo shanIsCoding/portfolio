@@ -5,7 +5,7 @@ export function Hero(){
   const handleDownload=()=>{
 
  const link = document.createElement("a");
-  link.href = "/shanCV.pdf";
+  link.href = "/shanCv.pdf";
   link.download = "Shan-Putten-Resume.pdf";
   link.click();
 
